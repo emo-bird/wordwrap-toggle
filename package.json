@@ -1,0 +1,56 @@
+{
+  "name": "wordwrap-toggle",
+  "displayName": "Word Wrap Toggle",
+  "description": "状态栏换行图标：左键打开菜单，快速切换当前文件软换行（Alt+Z）或打开全局/工作区的 Editor: Word Wrap 与 Word Wrap Column 设置。",
+  "version": "0.0.1",
+  "publisher": "一门鸽鸽",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<你的用户名>/wordwrap-toggle.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "wordwrap.showMenu",
+        "title": "打开换行菜单",
+        "category": "Word Wrap",
+        "icon": "$(word-wrap)"
+      },
+      {
+        "command": "wordwrap.toggle",
+        "title": "切换软换行模式",
+        "category": "Word Wrap"
+      },
+      {
+        "command": "wordwrap.openSettingsGlobal",
+        "title": "全局配置",
+        "category": "Word Wrap"
+      },
+      {
+        "command": "wordwrap.openSettingsWorkspace",
+        "title": "工作区配置",
+        "category": "Word Wrap"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.4.5"
+  }
+}
