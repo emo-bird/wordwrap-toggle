@@ -3,7 +3,7 @@
   "displayName": "Word Wrap Toggle",
   "description": "状态栏换行图标：左键打开菜单，快速切换当前文件软换行（Alt+Z）或打开全局/工作区的 Editor: Word Wrap 与 Word Wrap Column 设置。",
   "version": "0.0.1",
-  "publisher": "一门鸽鸽",
+  "publisher": "emo-bird",
   "repository": {
     "type": "git",
     "url": "https://github.com/emo-bird/wordwrap-toggle.git"
